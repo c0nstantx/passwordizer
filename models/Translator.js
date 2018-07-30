@@ -1,6 +1,7 @@
 import Dictionary from './Dictionary'
 
 class Translator {
+
   /**
    * Constructor
    */
@@ -25,4 +26,4 @@ class Translator {
   }
 }
 
-module.exports = Translator
+export default Translator

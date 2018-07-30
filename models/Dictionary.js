@@ -1,11 +1,11 @@
 class Dictionary {
   /**
-     * Get list of character equivalents
-     *
-     * @param character
-     * @returns {*}
-     */
-  static getEquivalentList (character) {
+   * Get list of character equivalents
+   *
+   * @param character
+   * @returns {*}
+   */
+  getEquivalentList (character) {
     let expression = character.toLowerCase()
     switch (expression) {
       case ' ':
@@ -88,11 +88,11 @@ class Dictionary {
   }
 
   /**
-     * Get a random character equivalent
-     *
-     * @param character
-     * @returns {*}
-     */
+   * Get a random character equivalent
+   *
+   * @param character
+   * @returns {*}
+   */
   getEquivalent (character) {
     let equivalents = this.getEquivalentList(character)
     let position = Math.floor(Math.random() * equivalents.length)

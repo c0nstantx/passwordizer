@@ -1,10 +1,21 @@
-import Translator from './models/Translator'
+'use strict'
+
+let Translator = require('./models/Translator')
 
 /**
- * Export.
+ * Export translate()
  */
-exports.translate = function (text) {
-  let translator = new Translator()
+export default {
 
-  return translator.translate(text)
+  /**
+   * Translates text to passwords
+   *
+   * @param text
+   * @returns {string}
+   */
+  translate: function (text) {
+    const translator = new Translator.default()
+
+    return translator.translate(text)
+  }
 }
