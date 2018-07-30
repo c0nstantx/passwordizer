@@ -1,10 +1,10 @@
 import Translator from './models/Translator'
 
-class Passwordizer {
-  // translate text to password
-  translate(text) {
-    return Translator.translate(text)
-  }
-}
+/**
+ * Export.
+ */
+exports.translate = function (text) {
+  let translator = new Translator()
 
-exports.Passwordizer = Passwordizer
+  return translator.translate(text)
+}
