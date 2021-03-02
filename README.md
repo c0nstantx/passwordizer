@@ -22,4 +22,4 @@ let password = passwordizer.translate("test") // Will produce 'tesT' or 'tESt' o
 
 ## Demo
 
-You can see a demo of passwordizer [here](https://passwordize.com)
+You can see a demo of passwordizer [here](https://passwordizer.herokuapp.com/)
